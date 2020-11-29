@@ -4,6 +4,41 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+  body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+  }
+
+  img {
+      max-width: 100%;
+      display: block;
+  }
+
+  h1, h2, h3, p {
+      margin: 0;
+  }
+
+  .container {
+      width: 85%;
+      max-width: 1040px;
+      margin: 0 auto;
+  }
+
+  .btn {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--text-color, #fff);
+      font-weight: 700;
+      padding: 8px 20px;
+      background: var(--highlight-color, #E5B833);
+      text-transform: uppercase;
+      font-size: 1.125rem;
+      border-radius: 4px;
+      transition: transform 250ms ease-in-out, opacity 175ms linear;
+  }
+
+  .btn:hover, .btn:focus {
+      transform: scale(1.1);
+      opacity: .9;
   }
