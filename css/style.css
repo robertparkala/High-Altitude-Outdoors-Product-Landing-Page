@@ -1,60 +1,133 @@
-*, 
+*,
 *::before,
 *::after {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-  body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-  }
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
 
-  img {
-      max-width: 100%;
-      display: block;
-  }
+img {
+  max-width: 100%;
+  display: block;
+}
 
-  h1, h2, h3, p {
-      margin: 0;
-  }
+h1, h2, h3, p {
+  margin: 0;
+}
 
-  .container {
-      width: 85%;
-      max-width: 1040px;
-      margin: 0 auto;
-  }
+.container {
+  width: 85%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
 
-  .btn {
-      display: inline-block;
-      text-decoration: none;
-      color: var(--text-color, #fff);
-      font-weight: 700;
-      padding: 8px 20px;
-      background: var(--highlight-color, #E5B833);
-      text-transform: uppercase;
-      font-size: 1.125rem;
-      border-radius: 4px;
-      transition: transform 250ms ease-in-out, opacity 250ms linear;
-  }
+section {
+  padding: 7em 0;
+}
 
-  .btn:hover, .btn:focus {
-      transform: scale(1.1);
-      opacity: .9;
-  }
+.columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
-  .hero-title {
-      font-size: 4rem;
-      font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
-      line-height: 1;
-      text-transform: uppercase;
-  }
+.columns > * {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-width: 240px;
+}
 
+.stack > * + * {
+  margin-top: var(--spacer, 2rem);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color, #fff);
+  font-weight: 700;
+  padding: 8px 20px;
+  background: var(--highlight-color, #29B5E0);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  border-radius: 4px;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.5s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.5s ease-in-out, opacity 0.5s linear, -webkit-transform 0.5s ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: .9;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.hero p {
+  text-transform: uppercase;
+}
+
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 15em 0;
+  background: #222;
+}
+
+@supports (background-blend-mode: multiply) {
   .hero {
-      color: #fff;
-      text-align: center;
-      padding: 240px 0;
-      background-image: url(../img/garmin.png), radial-gradient(#444, #000000);
-      background-repeat: no-repeat; 
-      background-color: #222;
+    background: url(../img/garmin-2.png), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1CB5E0), to(#000046));
+    background: url(../img/garmin-2.png), linear-gradient(#1CB5E0 50%, #000046);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  line-height: 1;
+  color: #000046;
+  margin-bottom: 5rem;
+}
+
+.spotlight {
+  background: #eee;
+}
+
+.spotlight-item {
+  display: block;
+  position: relative;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.spotlight-item:hover, .spotlight-item:focus {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=style.css.map */
