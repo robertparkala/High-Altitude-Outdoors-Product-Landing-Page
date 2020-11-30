@@ -1,0 +1,115 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+  body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+  }
+
+  img {
+      max-width: 100%;
+      display: block;
+  }
+
+  h1, h2, h3, p {
+      margin: 0;
+  }
+
+  .container {
+      width: 85%;
+      max-width: 1040px;
+      margin: 0 auto;
+  }
+
+  section {
+      padding: 7em 0;
+  }
+
+  .columns {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      & > * {
+          flex-basis: 30%;
+          min-width: 240px;
+      }
+  }
+
+  .stack > * + * {
+      margin-top: var(--spacer, 2rem);
+  }
+
+  .btn {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--text-color, #fff);
+      font-weight: 700;
+      padding: 8px 20px;
+      background: var(--highlight-color,#29B5E0);
+      text-transform: uppercase;
+      font-size: 1.125rem;
+      border-radius: 4px;
+      transition: transform 0.5s ease-in-out, opacity 0.5s linear;
+  }
+
+  .btn:hover, .btn:focus {
+      transform: scale(1.1);
+      opacity: .9;
+  }
+
+  .hero-title {
+      font-size: 4rem;
+      font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+      line-height: 1;
+      text-transform: uppercase;
+  }
+
+  .hero p{
+      text-transform: uppercase;
+  }
+
+  .hero {
+    color: #fff;
+    text-align: center;
+    padding: 15em 0;
+    background: #222;
+  
+    @supports (background-blend-mode: multiply) {
+      background: url(../img/garmin-2.png),
+      linear-gradient(#1CB5E0 50%,#000046);
+      background-blend-mode: multiply;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  .section-title {
+      text-align: center;
+      font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+      line-height: 1;
+      color: #000046;
+      margin-bottom: 5rem;
+  }
+
+  .spotlight {
+      background: #eee;
+
+      &-item {
+          display: block;
+          position: relative;
+          transform: scale(.85);
+          transition: transform 0.25s ease-in-out;
+
+          &:hover,
+          &:focus {
+              transform: scale(1);
+          }
+      }
+  }
