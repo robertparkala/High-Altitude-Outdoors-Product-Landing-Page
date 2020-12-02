@@ -162,4 +162,26 @@ section {
   font-weight: 700;
   font-size: 2.2rem;
 }
+
+.product {
+  background: radial-gradient(var(--product-inner, limegreen), var(--product-outer, purple));
+  padding: 50px 0;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  line-height: 1.1;
+}
+
+@media only screen and (min-width: 800px) {
+  .product-image {
+    position: relative;
+    left: 245px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
