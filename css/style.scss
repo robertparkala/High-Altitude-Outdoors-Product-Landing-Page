@@ -164,7 +164,53 @@
         line-height: 1.1;
     }
 
+    &-description {
+        text-transform: uppercase;
+    }
+
 }
+
+.watch-blue {
+    --product-inner: #29B5E0;
+    --product-outer: #3FA0E0;
+    --highlight-color: #00CADD;
+
+    }
+
+.watch-marine {
+    --product-inner: #29B5E0;
+    --product-outer: #00CADD;
+    --highlight-color: #00DCC9;
+
+    }
+
+.watch-surfgreen {
+    --product-inner: #00CADD;
+    --product-outer: #00DCC9;
+    --highlight-color: #6AEBAA;
+
+    }
+
+.watch-green {
+    --product-inner: #00DCC9;
+    --product-outer: #6AEBAA;
+    --highlight-color: #B2F588;
+
+    }
+
+.watch-greenspring {
+    --product-inner: #6AEBAA;
+    --product-outer: #B2F588;
+    --highlight-color: #00DCC9;
+
+    }
+    
+.watch-yellow {
+    --product-inner: #B2F588;
+    --product-outer: #F9F871;
+    --highlight-color: #6AEBAA;
+
+    }
 
 
 @media only screen and (min-width: 800px) {
