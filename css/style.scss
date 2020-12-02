@@ -89,7 +89,7 @@
       background-position: center center;
     }
   }
-
+ 
   .section-title {
       text-align: center;
       font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
@@ -117,7 +117,7 @@
 
               .spotlight-details {
                   opacity: 1;
-                  text-shadow: 0 0 32px rgba( #00C8A0, 1);
+                  text-shadow: 0 0 32px rgba( #29B5E0, 1);
               }
           }
 
@@ -127,7 +127,7 @@
               top: 1px;
               left: 5px;
               padding:  75% 75% 0 0;
-              background: #00C8A0;
+              background: #29B5E0;
               border-radius: 50%;
               z-index: -1;
           }
@@ -137,7 +137,7 @@
 
       &-details {
         opacity: 0;
-        transition: opacity 250ms linear;
+        transition: opacity 0.25s linear;
 
         span {
             display: block;

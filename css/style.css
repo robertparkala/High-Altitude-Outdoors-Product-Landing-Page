@@ -137,7 +137,7 @@ section {
 
 .spotlight-item:hover .spotlight-details, .spotlight-item:focus .spotlight-details {
   opacity: 1;
-  text-shadow: 0 0 32px #00c8a0;
+  text-shadow: 0 0 32px #29b5e0;
 }
 
 .spotlight-item::after {
@@ -146,15 +146,15 @@ section {
   top: 1px;
   left: 5px;
   padding: 75% 75% 0 0;
-  background: #00C8A0;
+  background: #29B5E0;
   border-radius: 50%;
   z-index: -1;
 }
 
 .spotlight-details {
   opacity: 0;
-  -webkit-transition: opacity 250ms linear;
-  transition: opacity 250ms linear;
+  -webkit-transition: opacity 0.25s linear;
+  transition: opacity 0.25s linear;
 }
 
 .spotlight-details span {
