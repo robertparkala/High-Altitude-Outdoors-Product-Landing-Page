@@ -63,6 +63,7 @@
       opacity: .9;
   }
 
+//   Hero Section
   .hero-title {
       font-size: 4rem;
       font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
@@ -89,7 +90,8 @@
       background-position: center center;
     }
   }
- 
+
+//   Spotlight Products
   .section-title {
       text-align: center;
       font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
@@ -146,3 +148,32 @@
         }
       }
   }
+
+//   Our Products
+.product {
+    background: radial-gradient(var(--product-inner, limegreen), var(--product-outer, purple));
+    padding: 50px 0;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    &-title {
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: 0 0 5px rgba(#000000, .2);
+        line-height: 1.1;
+    }
+
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    .product {
+
+        &-image {
+            position: relative;
+            left: 245px;
+        }
+    }
+}
