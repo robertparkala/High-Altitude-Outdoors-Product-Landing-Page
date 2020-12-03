@@ -232,10 +232,6 @@ section {
   }
 }
 
-.hero {
-  --highlight-color: #29B5E0;
-}
-
 .watch-blue {
   --product-inner: #29B5E0;
   --product-outer: #3FA0E0;
