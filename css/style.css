@@ -27,7 +27,7 @@ h1, h2, h3, p {
 }
 
 section {
-  padding: 7em 0;
+  padding: 5em 0;
 }
 
 .columns {
@@ -103,12 +103,12 @@ section {
   }
 }
 
-.section-title {
+.section-title-one {
   text-align: center;
   font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
   line-height: 1;
   color: #000046;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .spotlight {
@@ -127,7 +127,7 @@ section {
   text-decoration: none;
   color: #333;
   text-align: center;
-  line-height: 1.3;
+  line-height: 1.1;
 }
 
 .spotlight-item:hover, .spotlight-item:focus {
@@ -163,23 +163,77 @@ section {
   font-size: 2.2rem;
 }
 
+.section-title-two {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  line-height: 1;
+  color: #000046;
+  margin-bottom: 11rem;
+}
+
 .product {
-  background: radial-gradient(var(--product-inner, limegreen), var(--product-outer, purple));
-  padding: 50px 0;
+  background: radial-gradient(var(--product-inner, #29B5E0), var(--product-outer, #3FA0E0));
+  padding: 35px;
   border-radius: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 220px;
   text-align: center;
 }
 
 .product-title {
-  font-size: 4rem;
+  font-size: 2.9rem;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  line-height: 1.1;
+  line-height: 1;
 }
 
 .product-description {
   text-transform: uppercase;
+  font-size: 16px;
+}
+
+.product-image {
+  margin: -150px 0 0 0;
+}
+
+@media (min-width: 720px) {
+  .product {
+    text-align: right;
+  }
+  .product-image {
+    float: left;
+    width: 65%;
+    margin: -122px 0 0 0;
+    shape-outside: circle(40%);
+    shape-margin: 1rem;
+  }
+  .product.watch-marine {
+    text-align: left;
+  }
+  .product.watch-marine .product-image {
+    float: right;
+  }
+  .product.watch-green {
+    text-align: left;
+  }
+  .product.watch-green .product-image {
+    float: right;
+  }
+  .product.watch-yellow {
+    text-align: left;
+  }
+  .product.watch-yellow .product-image {
+    float: right;
+  }
+}
+
+@media (min-width: 900px) {
+  .product-image {
+    width: 50%;
+  }
+}
+
+.hero {
+  --highlight-color: #29B5E0;
 }
 
 .watch-blue {
@@ -216,12 +270,5 @@ section {
   --product-inner: #B2F588;
   --product-outer: #F9F871;
   --highlight-color: #6AEBAA;
-}
-
-@media only screen and (min-width: 800px) {
-  .product-image {
-    position: relative;
-    left: 245px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
