@@ -26,7 +26,7 @@
   }
 
   section {
-      padding: 7em 0;
+      padding: 5em 0;
   }
 
   .columns {
@@ -92,12 +92,12 @@
   }
 
 //   Spotlight Products
-  .section-title {
+  .section-title-one {
       text-align: center;
       font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
       line-height: 1;
       color: #000046;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
   }
 
   .spotlight {
@@ -111,7 +111,7 @@
           text-decoration: none;
           color: #333;
           text-align: center;
-          line-height: 1.3;
+          line-height: 1.1;
 
           &:hover,
           &:focus {
@@ -150,24 +150,82 @@
   }
 
 //   Our Products
+.section-title-two {
+    text-align: center;
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+    line-height: 1;
+    color: #000046;
+    margin-bottom: 11rem;
+}
 .product {
-    background: radial-gradient(var(--product-inner, limegreen), var(--product-outer, purple));
-    padding: 50px 0;
+    background: radial-gradient(var(--product-inner, #29B5E0), var(--product-outer, #3FA0E0));
+    padding: 35px;
     border-radius: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 220px;
     text-align: center;
 
     &-title {
-        font-size: 4rem;
+        font-size: 2.9rem;
         color: #fff;
         text-shadow: 0 0 5px rgba(#000000, .2);
-        line-height: 1.1;
+        line-height: 1;
     }
 
     &-description {
         text-transform: uppercase;
+        font-size: 16px;
     }
 
+    &-image {
+        margin: -150px 0 0 0;
+    }
+
+    @media (min-width: 720px) {
+        text-align: right;
+
+        &-image {
+            float: left;
+            width: 65%;
+            margin: -122px 0 0 0;
+            shape-outside: circle(40%);
+            shape-margin: 1rem;
+        }
+
+        &.watch-marine {
+            text-align: left;
+            .product-image {
+                float: right;
+            }
+        }
+
+        &.watch-green {
+            text-align: left;
+            .product-image {
+                float: right;
+            }
+        }
+
+        &.watch-yellow {
+            text-align: left;
+            .product-image {
+                float: right;
+            }
+        }
+
+    }
+
+    @media (min-width: 900px) {
+
+        &-image {
+            width: 50%;
+        }
+
+    }
+
+}
+
+.hero {
+    --highlight-color: #29B5E0;
 }
 
 .watch-blue {
@@ -213,13 +271,4 @@
     }
 
 
-@media only screen and (min-width: 800px) {
-
-    .product {
-
-        &-image {
-            position: relative;
-            left: 245px;
-        }
-    }
-}
+    
