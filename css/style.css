@@ -89,7 +89,7 @@ section {
   color: #fff;
   text-align: center;
   padding: 240px 0;
-  background: url(../img/garmin1.png);
+  background-image: url(../img/garmin1.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
