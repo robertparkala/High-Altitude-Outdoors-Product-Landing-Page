@@ -81,7 +81,7 @@
     padding: 240px 0;
   
     @supports (background-blend-mode: multiply) {
-        background: url(../img/garmin1.png),
+        background-image: url(../img/garmin1.png),
           radial-gradient( #1CB5E0 , #000046 );
         background-blend-mode: multiply;
         background-attachment: fixed;
