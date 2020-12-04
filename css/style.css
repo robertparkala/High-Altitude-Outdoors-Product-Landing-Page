@@ -102,7 +102,7 @@ section {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .hero {
     background-attachment: scroll;
   }
