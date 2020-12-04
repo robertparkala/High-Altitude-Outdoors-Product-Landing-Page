@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
@@ -26,7 +30,7 @@
   }
 
   section {
-      padding: 5em 0;
+      padding: 80px 0;
   }
 
   .columns {
@@ -211,13 +215,13 @@
 
         &.watch-yellow {
             text-align: left;
+            margin-bottom: 0px;
             .product-image {
                 float: right;
             }
         }
 
     }
-
 
     @media (min-width: 900px) {
 
@@ -227,6 +231,16 @@
 
     }
 
+}
+
+@media (max-width: 720px) {
+    .product {
+        margin-bottom: 150px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
 }
 
 .watch-blue {
@@ -270,6 +284,43 @@
     --highlight-color: #6AEBAA;
 
     }
+
+    // Footer
+    .subscribe-section {
+        background: #38A6E0;
+        height: 280px;
+    }
+
+    .footer {
+        display: flex;
+
+        &-subscribe {
+            color: #fff;
+            font-size: 22px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        &-text {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        &-btn {
+            text-align: center;
+            color: #38A6E0;
+            font-size: 15px;
+            width: 140px;
+            display: block;
+            margin: 10px auto 10px auto;
+            background: var(--highlight-color,#CCF67F);
+        }
+    }
+
+  
 
 
     

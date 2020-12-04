@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -27,7 +31,7 @@ h1, h2, h3, p {
 }
 
 section {
-  padding: 5em 0;
+  padding: 80px 0;
 }
 
 .columns {
@@ -225,6 +229,7 @@ section {
   }
   .product.watch-yellow {
     text-align: left;
+    margin-bottom: 0px;
   }
   .product.watch-yellow .product-image {
     float: right;
@@ -234,6 +239,15 @@ section {
 @media (min-width: 900px) {
   .product-image {
     width: 50%;
+  }
+}
+
+@media (max-width: 720px) {
+  .product {
+    margin-bottom: 150px;
+  }
+  section {
+    padding: 50px 0;
   }
 }
 
@@ -271,5 +285,41 @@ section {
   --product-inner: #B2F588;
   --product-outer: #F9F871;
   --highlight-color: #6AEBAA;
+}
+
+.subscribe-section {
+  background: #38A6E0;
+  height: 280px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-subscribe {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.footer-btn {
+  text-align: center;
+  color: #38A6E0;
+  font-size: 15px;
+  width: 140px;
+  display: block;
+  margin: 10px auto 10px auto;
+  background: var(--highlight-color, #CCF67F);
 }
 /*# sourceMappingURL=style.css.map */
