@@ -78,11 +78,10 @@
   .hero {
     color: #fff;
     text-align: center;
-    padding: 15em 0;
+    padding: 240px 0;
     background: #222;
     background: url(../img/garmin1.png),
     linear-gradient(#1CB5E0 50%,#000046);
-    background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -220,6 +219,8 @@
     }
 
 }
+
+
 
 .watch-blue {
     --product-inner: #29B5E0;

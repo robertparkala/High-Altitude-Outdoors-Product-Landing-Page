@@ -88,11 +88,10 @@ section {
 .hero {
   color: #fff;
   text-align: center;
-  padding: 15em 0;
+  padding: 240px 0;
   background: #222;
   background: url(../img/garmin1.png), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1CB5E0), to(#000046));
   background: url(../img/garmin1.png), linear-gradient(#1CB5E0 50%, #000046);
-  background-blend-mode: multiply;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
