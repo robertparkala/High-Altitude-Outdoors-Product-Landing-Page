@@ -79,17 +79,13 @@
     color: #fff;
     text-align: center;
     padding: 240px 0;
-  
-    @supports (background-blend-mode: multiply) {
-        background-image: url(../img/garmin1.png),
+        background: url(../img/garmin1.png),
           radial-gradient( #1CB5E0 , #000046 );
-        background-blend-mode: multiply;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center center;
         min-height: 100%;
       }
-  }
 
 //   Spotlight Products
   .section-title-one {
