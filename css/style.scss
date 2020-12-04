@@ -78,8 +78,7 @@
   .hero {
     color: #fff;
     text-align: center;
-    padding: 15em 0;
-    background: #222;
+    padding: 240px 0;
   
     @supports (background-blend-mode: multiply) {
       background: url(../img/garmin1.png),
